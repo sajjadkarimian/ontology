@@ -1,0 +1,127 @@
+<http://sjka.site/ontology/seips> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/creator> "Karimian Brennan" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/date> "2025-04-30" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/rights> "https://creativecommons.org/licenses/by/4.0/" .
+<http://sjka.site/ontology/seips> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology models components of work systems and interactions in clinical environments using the SEIPS framework." .
+<http://sjka.site/ontology/seips> <http://www.w3.org/2000/01/rdf-schema#label> "SEIPS Ontology for Socio-Technical Systems in Healthcare" .
+<http://sjka.site/ontology/seips> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#isUsedBy
+<http://sjka.site/ontology/seips#isUsedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#isUsedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://sjka.site/ontology/seips#usesTool> .
+<http://sjka.site/ontology/seips#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Systems> .
+<http://sjka.site/ontology/seips#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Agent> .
+<http://sjka.site/ontology/seips#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a tool is used by an agent." .
+<http://sjka.site/ontology/seips#isUsedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isUsedBy" .
+# 
+# http://sjka.site/ontology/seips#usesTool
+<http://sjka.site/ontology/seips#usesTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#usesTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Agent> .
+<http://sjka.site/ontology/seips#usesTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Systems> .
+<http://sjka.site/ontology/seips#usesTool> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an agent uses a tool to perform a task." .
+<http://sjka.site/ontology/seips#usesTool> <http://www.w3.org/2000/01/rdf-schema#label> "usesTool" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#hasName
+<http://sjka.site/ontology/seips#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sjka.site/ontology/seips#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Agent> .
+<http://sjka.site/ontology/seips#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sjka.site/ontology/seips#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of an agent, system, or environment component." .
+<http://sjka.site/ontology/seips#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "hasName" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#Activity
+<http://sjka.site/ontology/seips#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "An action or process carried out by agents in the healthcare system." .
+<http://sjka.site/ontology/seips#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+# 
+# http://sjka.site/ontology/seips#Agent
+<http://sjka.site/ontology/seips#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity (e.g., person or system) that performs tasks or influences outcomes in a healthcare setting." .
+<http://sjka.site/ontology/seips#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://sjka.site/ontology/seips#Caregiver
+<http://sjka.site/ontology/seips#Caregiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Caregiver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sjka.site/ontology/seips#Agent> .
+<http://sjka.site/ontology/seips#Caregiver> <http://www.w3.org/2000/01/rdf-schema#comment> "An individual providing care to a patient either formally or informally." .
+<http://sjka.site/ontology/seips#Caregiver> <http://www.w3.org/2000/01/rdf-schema#label> "Caregiver" .
+# 
+# http://sjka.site/ontology/seips#Organisation
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2002/07/owl#equivalentClass> <http://sjka.site/ontology/seips#Systems> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/org#Organization> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "An organizational entity responsible for managing healthcare systems." .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation" .
+# 
+# http://sjka.site/ontology/seips#Patient
+<http://sjka.site/ontology/seips#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sjka.site/ontology/seips#Agent> .
+<http://sjka.site/ontology/seips#Patient> <http://www.w3.org/2002/07/owl#disjointWith> <http://sjka.site/ontology/seips#Systems> .
+<http://sjka.site/ontology/seips#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A person receiving healthcare services." .
+<http://sjka.site/ontology/seips#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
+# 
+# http://sjka.site/ontology/seips#Systems
+<http://sjka.site/ontology/seips#Systems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Systems> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sjka.site/ontology/seips#Agent> .
+<http://sjka.site/ontology/seips#Systems> <http://www.w3.org/2000/01/rdf-schema#comment> "Systems or technologies used to support healthcare tasks." .
+<http://sjka.site/ontology/seips#Systems> <http://www.w3.org/2000/01/rdf-schema#label> "Tools" .
+# 
+# http://sjka.site/ontology/seips#Task
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sjka.site/ontology/seips#Activity> .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific type of activity performed by an agent in a healthcare setting." .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organizational unit such as a healthcare institution or hospital." .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,295 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://sjka.site/ontology/seips" ],
+    "iri" : "http://sjka.site/ontology/seips",
+    "version" : "1.0",
+    "author" : [ "Karimian Brennan" ],
+    "labels" : {
+      "undefined" : "SEIPS Ontology for Socio-Technical Systems in Healthcare"
+    },
+    "comments" : {
+      "undefined" : "This ontology models components of work systems and interactions in clinical environments using the SEIPS framework."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2025-04-30",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Karimian Brennan",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "3",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://sjka.site/ontology/seips#Patient",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Patient",
+      "undefined" : "Patient"
+    },
+    "comment" : {
+      "undefined" : "A person receiving healthcare services."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#Organisation",
+    "equivalent" : [ "3", "4" ],
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organisation",
+      "undefined" : "Organisation"
+    },
+    "comment" : {
+      "undefined" : "An organizational entity responsible for managing healthcare systems."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "2",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "baseIri" : "http://www.w3.org/ns/org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "subClasses" : [ "2" ],
+    "comment" : {
+      "undefined" : "An organizational unit such as a healthcare institution or hospital."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#Activity",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "undefined" : "An action or process carried out by agents in the healthcare system."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#Systems",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Systems",
+      "undefined" : "Tools"
+    },
+    "comment" : {
+      "undefined" : "Systems or technologies used to support healthcare tasks."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#Caregiver",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Caregiver",
+      "undefined" : "Caregiver"
+    },
+    "comment" : {
+      "undefined" : "An individual providing care to a patient either formally or informally."
+    },
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#Agent",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "0", "4", "12" ],
+    "comment" : {
+      "undefined" : "An entity (e.g., person or system) that performs tasks or influences outcomes in a healthcare setting."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#Task",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Task",
+      "undefined" : "Task"
+    },
+    "comment" : {
+      "undefined" : "A specific type of activity performed by an agent in a healthcare setting."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#isUsedBy",
+    "inverse" : "14",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isUsedBy",
+      "undefined" : "isUsedBy"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Indicates that a tool is used by an agent."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#usesTool",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "usesTool",
+      "undefined" : "usesTool"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates that an agent uses a tool to perform a task."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://sjka.site/ontology/seips#hasName",
+    "baseIri" : "http://sjka.site/ontology/seips",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "hasName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Name of an agent, system, or environment component."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  } ]
+}
