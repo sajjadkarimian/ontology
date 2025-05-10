@@ -1,0 +1,455 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://sjka.site/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://sjka.site/ontology/seips",
+    "author" : [ "Sajjad Karimian" ],
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2025-05-10",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Sajjad Karimian",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://sjka.site/ontology/Person",
+    "baseIri" : "http://sjka.site/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "comment" : {
+      "undefined" : "A human actor in the work system."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://sjka.site/ontology/TechnologyAndTools",
+    "baseIri" : "http://sjka.site/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyAndTools",
+      "undefined" : "TechnologyAndTools"
+    },
+    "comment" : {
+      "undefined" : "This class merges physical tools and digital technologies. Consider modeling as two separate classes (Technology, Tools) if more precision is required."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://sjka.site/ontology/Environment",
+    "baseIri" : "http://sjka.site/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Environment",
+      "undefined" : "Environment"
+    },
+    "comment" : {
+      "undefined" : "Physical or social setting where work happens."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "12",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://sjka.site/ontology/Organisation",
+    "baseIri" : "http://sjka.site/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organisation",
+      "undefined" : "Organisation"
+    },
+    "comment" : {
+      "undefined" : "The formal structure or unit where the work takes place."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://sjka.site/ontology/Tasks",
+    "baseIri" : "http://sjka.site/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tasks",
+      "undefined" : "Tasks"
+    },
+    "comment" : {
+      "undefined" : "Work activities carried out by a person."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://sjka.site/ontology/supportsTask",
+    "inverse" : "4",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "supportsTask",
+      "undefined" : "supportsTask"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Relates a tool or technology to the task it supports."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://sjka.site/ontology/providesTools",
+    "inverse" : "7",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "providesTools",
+      "undefined" : "providesTools"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates an organisation providing technology or tools."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://sjka.site/ontology/usesTechnology",
+    "inverse" : "10",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "usesTechnology",
+      "undefined" : "usesTechnology"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Indicates that a person uses a technology or tool."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://sjka.site/ontology/isUsedBy",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isUsedBy",
+      "undefined" : "isUsedBy"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://sjka.site/ontology/surroundsTask",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "surroundsTask",
+      "undefined" : "surroundsTask"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Indicates that a task is situated within an environment."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://sjka.site/ontology/hostedBy",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hostedBy",
+      "undefined" : "hostedBy"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Indicates that an organisation is hosted by an environment."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "3",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "0",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://sjka.site/ontology/receivesToolsFrom",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "receivesToolsFrom",
+      "undefined" : "receivesToolsFrom"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://sjka.site/ontology/performsTask",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "performsTask",
+      "undefined" : "performsTask"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Indicates that a person performs a task."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://sjka.site/ontology/memberOf",
+    "inverse" : "21",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "memberOf",
+      "undefined" : "memberOf"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Specifies the organisation a person belongs to."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://sjka.site/ontology/worksInEnvironment",
+    "inverse" : "23",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "worksInEnvironment",
+      "undefined" : "worksInEnvironment"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Indicates the environment where a person works."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://sjka.site/ontology/situatedIn",
+    "inverse" : "16",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "situatedIn",
+      "undefined" : "situatedIn"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Specifies the environment where an organisation is situated."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://sjka.site/ontology/organisesTasks",
+    "inverse" : "26",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "organisesTasks",
+      "undefined" : "organisesTasks"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates that an organisation is responsible for organising tasks."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://sjka.site/ontology/isTaskOf",
+    "inverse" : "19",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "isTaskOf",
+      "undefined" : "isTaskOf"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://sjka.site/ontology/isSurroundedBy",
+    "inverse" : "15",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "isSurroundedBy",
+      "undefined" : "isSurroundedBy"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://sjka.site/ontology/isOrganisedBy",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isOrganisedBy",
+      "undefined" : "isOrganisedBy"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://sjka.site/ontology/hasWorker",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasWorker",
+      "undefined" : "hasWorker"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://sjka.site/ontology/isSupportedBy",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isSupportedBy",
+      "undefined" : "isSupportedBy"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://sjka.site/ontology/hasMember",
+    "baseIri" : "http://sjka.site/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasMember",
+      "undefined" : "hasMember"
+    },
+    "domain" : "12",
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  } ]
+}
