@@ -1,0 +1,1 @@
+The is the SEIPS ontology based on Carayon P, Wooldridge A, Hoonakker P, Hundt AS, Kelly MM. SEIPS 3.0: Human-centered design of the patient journey for patient safety. Appl Ergon. 2020 Apr;84:103033. doi: 10.1016/j.apergo.2019.103033. Epub 2020 Jan 10. PMID: 31987516; PMCID: PMC7152782.
