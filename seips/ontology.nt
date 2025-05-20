@@ -1,0 +1,210 @@
+<http://sjka.site/ontology/seips> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/description> "Ontology for modelling Systems Engineering Initiative for Patient Safety (SEIPS)3.0 the work systems." .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/language> "en" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/elements/1.1/title> "SEIPS 3.0 Ontology" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/abstract> "This ontology models the SEIPS 3.0 framework by incorporating entities such as person, task, tool, environment, and organization. It is inspired by the article 'Integrating human factors and systems engineering in patient safety' (PMID:31987516) and uses WIDOCO for documentation." .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/bibliographicCitation> "Carayon P, Wooldridge A, Hoonakker P, Hundt AS, Kelly MM, Seidl KL, et al. 'SEIPS 3.0: Human-centered design of the patient journey for patient safety.' Applied Ergonomics. 2020 Apr;84:103033." .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/creator> "Sajjad Karimian" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/date> "2025-05-20" .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/description> "This ontology extends SEIPS 3.0 with semantic web standards (OWL, PROV-O). It models work systems for patient safety." .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://sjka.site/ontology/seips> <http://purl.org/dc/terms/title> "SEIPS 3.0 Ontology" .
+<http://sjka.site/ontology/seips> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#memberOfOrganisation
+<http://sjka.site/ontology/seips#memberOfOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#memberOfOrganisation> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Organisation> .
+<http://sjka.site/ontology/seips#memberOfOrganisation> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#memberOfOrganisation> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#memberOfOrganisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the organisation a person belongs to." .
+<http://sjka.site/ontology/seips#memberOfOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "memberOfOrganisation" .
+# 
+# http://sjka.site/ontology/seips#performsTask
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#performsTask> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#performsTask> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a person performs a task." .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#label> "performsTask" .
+# 
+# http://sjka.site/ontology/seips#providesTechnologyOrTool
+<http://sjka.site/ontology/seips#providesTechnologyOrTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#providesTechnologyOrTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#TechnologyOrTool> .
+<http://sjka.site/ontology/seips#providesTechnologyOrTool> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#providesTechnologyOrTool> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#providesTechnologyOrTool> <http://www.w3.org/2000/01/rdf-schema#comment> "An organisation that provides technologies or tools used for tasks." .
+<http://sjka.site/ontology/seips#providesTechnologyOrTool> <http://www.w3.org/2000/01/rdf-schema#label> "providesTechnologyOrTool" .
+# 
+# http://sjka.site/ontology/seips#responsibleForTask
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an organisation is responsible for set of tasks." .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#label> "responsibleForTask" .
+# 
+# http://sjka.site/ontology/seips#situatedInEnvironment
+<http://sjka.site/ontology/seips#situatedInEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#situatedInEnvironment> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Environment> .
+<http://sjka.site/ontology/seips#situatedInEnvironment> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#situatedInEnvironment> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#situatedInEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "Environment in which an organisation is located." .
+<http://sjka.site/ontology/seips#situatedInEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "situatedInEnvironment" .
+# 
+# http://sjka.site/ontology/seips#supportsTask
+<http://sjka.site/ontology/seips#supportsTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#supportsTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#supportsTask> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#supportsTask> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#supportsTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates technology or tool to a task it supports." .
+<http://sjka.site/ontology/seips#supportsTask> <http://www.w3.org/2000/01/rdf-schema#label> "supportsTask" .
+# 
+# http://sjka.site/ontology/seips#usesTechnologyAndTool
+<http://sjka.site/ontology/seips#usesTechnologyAndTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#usesTechnologyAndTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#TechnologyOrTool> .
+<http://sjka.site/ontology/seips#usesTechnologyAndTool> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#usesTechnologyAndTool> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#usesTechnologyAndTool> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic property linking any entity to tools or technologies they use." .
+<http://sjka.site/ontology/seips#usesTechnologyAndTool> <http://www.w3.org/2000/01/rdf-schema#label> "usesTechnologyAndTool" .
+# 
+# http://sjka.site/ontology/seips#worksInEnvironment
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Environment> .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the physical environment where a person works." .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "worksInEnvironment" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#Environment
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Environment> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#Environment> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical and contextual surroundings in which the task is performed." .
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment" .
+# 
+# http://sjka.site/ontology/seips#Organisation
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Organisation> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#Organisation> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an organization responsible for or involved in healthcare activities." .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation" .
+# 
+# http://sjka.site/ontology/seips#Person
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Person> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#Person> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human actor in the work system." .
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://sjka.site/ontology/seips#Task
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://sjka.site/ontology/seips#Task> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#Task> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of work performed within the SEIPS framework." .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
+# 
+# http://sjka.site/ontology/seips#TechnologyOrTool
+<http://sjka.site/ontology/seips#TechnologyOrTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#TechnologyOrTool> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#TechnologyOrTool> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#TechnologyOrTool> <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#TechnologyOrTool> <http://www.w3.org/2000/01/rdf-schema#comment> "Technological systems or tools used to perform tasks" .
+<http://sjka.site/ontology/seips#TechnologyOrTool> <http://www.w3.org/2000/01/rdf-schema#label> "Technology or Tool" .
+# 
+# http://www.w3.org/ns/prov#Activity
+# 
+# http://www.w3.org/ns/prov#Agent
+# 
+# http://www.w3.org/ns/prov#Entity
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

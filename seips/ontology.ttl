@@ -1,0 +1,230 @@
+@prefix : <http://sjka.site/ontology/seips#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://sjka.site/ontology/seips#> .
+
+<http://sjka.site/ontology/seips> rdf:type owl:Ontology ;
+                                   <http://purl.org/dc/elements/1.1/contributor> "Junli Liang" ,
+                                                                                 "Rob Brennan" ;
+                                   <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian" ;
+                                   <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                                   <http://purl.org/dc/elements/1.1/description> "Ontology for modelling Systems Engineering Initiative for Patient Safety (SEIPS)3.0 the work systems." ;
+                                   <http://purl.org/dc/elements/1.1/language> "en" ;
+                                   <http://purl.org/dc/elements/1.1/title> "SEIPS 3.0 Ontology" ;
+                                   <http://purl.org/dc/terms/abstract> "This ontology models the SEIPS 3.0 framework by incorporating entities such as person, task, tool, environment, and organization. It is inspired by the article 'Integrating human factors and systems engineering in patient safety' (PMID:31987516) and uses WIDOCO for documentation." ;
+                                   <http://purl.org/dc/terms/bibliographicCitation> "Carayon P, Wooldridge A, Hoonakker P, Hundt AS, Kelly MM, Seidl KL, et al. 'SEIPS 3.0: Human-centered design of the patient journey for patient safety.' Applied Ergonomics. 2020 Apr;84:103033." ;
+                                   <http://purl.org/dc/terms/creator> "Sajjad Karimian" ;
+                                   <http://purl.org/dc/terms/date> "2025-05-20" ;
+                                   <http://purl.org/dc/terms/description> "This ontology extends SEIPS 3.0 with semantic web standards (OWL, PROV-O). It models work systems for patient safety." ;
+                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                   <http://purl.org/dc/terms/title> "SEIPS 3.0 Ontology" ;
+                                   owl:versionInfo "v1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://sjka.site/ontology/seips#memberOfOrganisation
+:memberOfOrganisation rdf:type owl:ObjectProperty ;
+                      rdfs:range :Organisation ;
+                      <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                      <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                      rdfs:comment "Specifies the organisation a person belongs to." ;
+                      rdfs:label "memberOfOrganisation" .
+
+
+###  http://sjka.site/ontology/seips#performsTask
+:performsTask rdf:type owl:ObjectProperty ;
+              rdfs:range :Task ;
+              <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+              <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+              rdfs:comment "Indicates that a person performs a task." ;
+              rdfs:label "performsTask" .
+
+
+###  http://sjka.site/ontology/seips#providesTechnologyOrTool
+:providesTechnologyOrTool rdf:type owl:ObjectProperty ;
+                          rdfs:range :TechnologyOrTool ;
+                          <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                          <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                          rdfs:comment "An organisation that provides technologies or tools used for tasks." ;
+                          rdfs:label "providesTechnologyOrTool" .
+
+
+###  http://sjka.site/ontology/seips#responsibleForTask
+:responsibleForTask rdf:type owl:ObjectProperty ;
+                    rdfs:range :Task ;
+                    <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                    <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                    rdfs:comment "Indicates that an organisation is responsible for set of tasks." ;
+                    rdfs:label "responsibleForTask" .
+
+
+###  http://sjka.site/ontology/seips#situatedInEnvironment
+:situatedInEnvironment rdf:type owl:ObjectProperty ;
+                       rdfs:range :Environment ;
+                       <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                       <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                       rdfs:comment "Environment in which an organisation is located." ;
+                       rdfs:label "situatedInEnvironment" .
+
+
+###  http://sjka.site/ontology/seips#supportsTask
+:supportsTask rdf:type owl:ObjectProperty ;
+              rdfs:range :Task ;
+              <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+              <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+              rdfs:comment "Relates technology or tool to a task it supports." ;
+              rdfs:label "supportsTask" .
+
+
+###  http://sjka.site/ontology/seips#usesTechnologyAndTool
+:usesTechnologyAndTool rdf:type owl:ObjectProperty ;
+                       rdfs:range :TechnologyOrTool ;
+                       <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                       <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                       rdfs:comment "Generic property linking any entity to tools or technologies they use." ;
+                       rdfs:label "usesTechnologyAndTool" .
+
+
+###  http://sjka.site/ontology/seips#worksInEnvironment
+:worksInEnvironment rdf:type owl:ObjectProperty ;
+                    rdfs:range :Environment ;
+                    <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                    <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                    rdfs:comment "Indicates the physical environment where a person works." ;
+                    rdfs:label "worksInEnvironment" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sjka.site/ontology/seips#Environment
+:Environment rdf:type owl:Class ;
+             <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+             <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+             rdfs:comment "The physical and contextual surroundings in which the task is performed." ;
+             rdfs:label "Environment" .
+
+
+###  http://sjka.site/ontology/seips#Organisation
+:Organisation rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+              <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+              <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+              rdfs:comment "Represents an organization responsible for or involved in healthcare activities." ;
+              rdfs:label "Organisation" .
+
+
+###  http://sjka.site/ontology/seips#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
+        <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+        <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+        rdfs:comment "A human actor in the work system." ;
+        rdfs:label "Person" .
+
+
+###  http://sjka.site/ontology/seips#Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+      <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+      <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+      rdfs:comment "A unit of work performed within the SEIPS framework." ;
+      rdfs:label "Task" .
+
+
+###  http://sjka.site/ontology/seips#TechnologyOrTool
+:TechnologyOrTool rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                  <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en ;
+                  <http://purl.org/dc/elements/1.1/date> "2025-05-20"^^xsd:date ;
+                  rdfs:comment "Technological systems or tools used to perform tasks" ;
+                  rdfs:label "Technology or Tool" .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

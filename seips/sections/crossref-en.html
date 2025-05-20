@@ -1,0 +1,467 @@
+<h2 id="crossreference" class="list">Cross-reference for SEIPS 3.0 Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by SEIPS 3.0 Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Environment" title="http://sjka.site/ontology/seips#Environment">Environment</a></li>
+  <li><a href="#Organisation" title="http://sjka.site/ontology/seips#Organisation">Organisation</a></li>
+  <li><a href="#Person" title="http://sjka.site/ontology/seips#Person">Person</a></li>
+  <li><a href="#Task" title="http://sjka.site/ontology/seips#Task">Task</a></li>
+  <li><a href="#TechnologyOrTool" title="http://sjka.site/ontology/seips#TechnologyOrTool">Technology or Tool</a></li>
+ </ul>
+ <div class="entity" id="Environment">
+  <h3>Environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#Environment</p>
+  <div class="comment">
+   <span class="markdown">The physical and contextual surroundings in which the task is performed.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#situatedInEnvironment" title="http://sjka.site/ontology/seips#situatedInEnvironment">situatedInEnvironment</a> <sup class="type-op" title="object property">op</sup>, <a href="#worksInEnvironment" title="http://sjka.site/ontology/seips#worksInEnvironment">worksInEnvironment</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Organisation">
+  <h3>Organisation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#Organisation</p>
+  <div class="comment">
+   <span class="markdown">Represents an organization responsible for or involved in healthcare activities.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#memberOfOrganisation" title="http://sjka.site/ontology/seips#memberOfOrganisation">memberOfOrganisation</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#Person</p>
+  <div class="comment">
+   <span class="markdown">A human actor in the work system.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Task">
+  <h3>Task<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#Task</p>
+  <div class="comment">
+   <span class="markdown">A unit of work performed within the SEIPS framework.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#performsTask" title="http://sjka.site/ontology/seips#performsTask">performsTask</a> <sup class="type-op" title="object property">op</sup>, <a href="#responsibleForTask" title="http://sjka.site/ontology/seips#responsibleForTask">responsibleForTask</a> <sup class="type-op" title="object property">op</sup>, <a href="#supportsTask" title="http://sjka.site/ontology/seips#supportsTask">supportsTask</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TechnologyOrTool">
+  <h3>Technology or Tool<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#TechnologyOrTool</p>
+  <div class="comment">
+   <span class="markdown">Technological systems or tools used to perform tasks</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#providesTechnologyOrTool" title="http://sjka.site/ontology/seips#providesTechnologyOrTool">providesTechnologyOrTool</a> <sup class="type-op" title="object property">op</sup>, <a href="#usesTechnologyAndTool" title="http://sjka.site/ontology/seips#usesTechnologyAndTool">usesTechnologyAndTool</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#memberOfOrganisation" title="http://sjka.site/ontology/seips#memberOfOrganisation">memberOfOrganisation</a></li>
+  <li><a href="#performsTask" title="http://sjka.site/ontology/seips#performsTask">performsTask</a></li>
+  <li><a href="#providesTechnologyOrTool" title="http://sjka.site/ontology/seips#providesTechnologyOrTool">providesTechnologyOrTool</a></li>
+  <li><a href="#responsibleForTask" title="http://sjka.site/ontology/seips#responsibleForTask">responsibleForTask</a></li>
+  <li><a href="#situatedInEnvironment" title="http://sjka.site/ontology/seips#situatedInEnvironment">situatedInEnvironment</a></li>
+  <li><a href="#supportsTask" title="http://sjka.site/ontology/seips#supportsTask">supportsTask</a></li>
+  <li><a href="#usesTechnologyAndTool" title="http://sjka.site/ontology/seips#usesTechnologyAndTool">usesTechnologyAndTool</a></li>
+  <li><a href="#worksInEnvironment" title="http://sjka.site/ontology/seips#worksInEnvironment">worksInEnvironment</a></li>
+ </ul>
+ <div class="entity" id="memberOfOrganisation">
+  <h3>memberOfOrganisation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#memberOfOrganisation</p>
+  <div class="comment">
+   <span class="markdown">Specifies the organisation a person belongs to.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Organisation" title="http://sjka.site/ontology/seips#Organisation">Organisation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="performsTask">
+  <h3>performsTask<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#performsTask</p>
+  <div class="comment">
+   <span class="markdown">Indicates that a person performs a task.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="http://sjka.site/ontology/seips#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="providesTechnologyOrTool">
+  <h3>providesTechnologyOrTool<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#providesTechnologyOrTool</p>
+  <div class="comment">
+   <span class="markdown">An organisation that provides technologies or tools used for tasks.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TechnologyOrTool" title="http://sjka.site/ontology/seips#TechnologyOrTool">Technology or Tool</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="responsibleForTask">
+  <h3>responsibleForTask<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#responsibleForTask</p>
+  <div class="comment">
+   <span class="markdown">Indicates that an organisation is responsible for set of tasks.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="http://sjka.site/ontology/seips#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="situatedInEnvironment">
+  <h3>situatedInEnvironment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#situatedInEnvironment</p>
+  <div class="comment">
+   <span class="markdown">Environment in which an organisation is located.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Environment" title="http://sjka.site/ontology/seips#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="supportsTask">
+  <h3>supportsTask<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#supportsTask</p>
+  <div class="comment">
+   <span class="markdown">Relates technology or tool to a task it supports.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Task" title="http://sjka.site/ontology/seips#Task">Task</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="usesTechnologyAndTool">
+  <h3>usesTechnologyAndTool<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#usesTechnologyAndTool</p>
+  <div class="comment">
+   <span class="markdown">Generic property linking any entity to tools or technologies they use.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#TechnologyOrTool" title="http://sjka.site/ontology/seips#TechnologyOrTool">Technology or Tool</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="worksInEnvironment">
+  <h3>worksInEnvironment<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/seips#worksInEnvironment</p>
+  <div class="comment">
+   <span class="markdown">Indicates the physical environment where a person works.</span>
+  </div>
+  <dl>
+   <dt>
+    Date:
+   </dt>
+   <dd>
+    20/05/2025
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Authors:
+   </dt>
+   <dd>
+    Sajjad Karimian
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Environment" title="http://sjka.site/ontology/seips#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
