@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:atlas="http://sjka.site/ontology/atlas#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#hasCardinality -->
+
+
+    <AnnotationProperty rdf:about="http://sjka.site/ontology/atlas#hasCardinality">
+        <rdfs:comment xml:lang="en">Used to describe whether a property is optional or mandatory for a class</rdfs:comment>
+        <rdfs:label xml:lang="en">Cardinality Status</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#Actor -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Individual performing or responsible for activity.</rdfs:comment>
+        <rdfs:label>Actor</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#ContextualUse -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#ContextualUse">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">The use of data in a specific role and time.</rdfs:comment>
+        <rdfs:label>ContextualUse</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DataConsumer -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DataConsumer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Agent who uses data for specific purposes.</rdfs:comment>
+        <rdfs:label>DataConsumer</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DataFlow -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DataFlow">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Data exchanged between components or activities.</rdfs:comment>
+        <rdfs:label>DataFlow</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DataProcessingStep -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DataProcessingStep">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">A step in which data is transformed.</rdfs:comment>
+        <rdfs:label>DataProcessingStep</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DataProducer -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DataProducer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Agent who creates or provides data.</rdfs:comment>
+        <rdfs:label>DataProducer</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DataStore -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DataStore">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Location where data is stored and possibly transformed.</rdfs:comment>
+        <rdfs:label>DataStore</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DataValue -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DataValue">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">A data item or record, potentially derived.</rdfs:comment>
+        <rdfs:label>DataValue</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#DerivedInsight -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#DerivedInsight">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Conclusion or insight derived from data.</rdfs:comment>
+        <rdfs:label>DerivedInsight</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#Environment -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#Environment">
+        <rdfs:subClassOf rdf:resource="http://sjka.site/ontology/seips#Environment"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">optional</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Contextual environment from SEIPS model.</rdfs:comment>
+        <rdfs:label>Environment</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#ExternalEntity -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#ExternalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">External agent involved in data operations.</rdfs:comment>
+        <rdfs:label>ExternalEntity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#InternalEntity -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#InternalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Internal agent involved in data operations.</rdfs:comment>
+        <rdfs:label>InternalEntity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#Interpretation -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#Interpretation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Interpretation or analysis activity on data.</rdfs:comment>
+        <rdfs:label>Interpretation</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#Organisation -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">optional</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Organisation responsible for data handling.</rdfs:comment>
+        <rdfs:label>Organisation</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#Process -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#Process">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <atlas:hasCardinality xml:lang="en">mandatory</atlas:hasCardinality>
+        <rdfs:comment xml:lang="en">Process in which data operations are performed.</rdfs:comment>
+        <rdfs:label>Process</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/atlas#SystemBoundary -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/atlas#SystemBoundary">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-22</dc:date>
+        <rdfs:comment xml:lang="en">Defines boundary between system and user activities.</rdfs:comment>
+        <rdfs:label>SystemBoundary</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#Environment -->
+
+
+    <Class rdf:about="http://sjka.site/ontology/seips#Environment"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,233 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://sjka.site/ontology/atlas#hasCardinality
+<http://sjka.site/ontology/atlas#hasCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://sjka.site/ontology/atlas#hasCardinality> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to describe whether a property is optional or mandatory for a class"@en .
+<http://sjka.site/ontology/atlas#hasCardinality> <http://www.w3.org/2000/01/rdf-schema#label> "Cardinality Status"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/atlas#Actor
+<http://sjka.site/ontology/atlas#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Actor> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#Actor> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#Actor> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#Actor> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#Actor> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual performing or responsible for activity."@en .
+<http://sjka.site/ontology/atlas#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+# 
+# http://sjka.site/ontology/atlas#ContextualUse
+<http://sjka.site/ontology/atlas#ContextualUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://www.w3.org/2000/01/rdf-schema#comment> "The use of data in a specific role and time."@en .
+<http://sjka.site/ontology/atlas#ContextualUse> <http://www.w3.org/2000/01/rdf-schema#label> "ContextualUse" .
+# 
+# http://sjka.site/ontology/atlas#DataConsumer
+<http://sjka.site/ontology/atlas#DataConsumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent who uses data for specific purposes."@en .
+<http://sjka.site/ontology/atlas#DataConsumer> <http://www.w3.org/2000/01/rdf-schema#label> "DataConsumer" .
+# 
+# http://sjka.site/ontology/atlas#DataFlow
+<http://sjka.site/ontology/atlas#DataFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataFlow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataFlow> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DataFlow> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DataFlow> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DataFlow> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DataFlow> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DataFlow> <http://www.w3.org/2000/01/rdf-schema#comment> "Data exchanged between components or activities."@en .
+<http://sjka.site/ontology/atlas#DataFlow> <http://www.w3.org/2000/01/rdf-schema#label> "DataFlow" .
+# 
+# http://sjka.site/ontology/atlas#DataProcessingStep
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://www.w3.org/2000/01/rdf-schema#comment> "A step in which data is transformed."@en .
+<http://sjka.site/ontology/atlas#DataProcessingStep> <http://www.w3.org/2000/01/rdf-schema#label> "DataProcessingStep" .
+# 
+# http://sjka.site/ontology/atlas#DataProducer
+<http://sjka.site/ontology/atlas#DataProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataProducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/atlas#DataProducer> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DataProducer> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DataProducer> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DataProducer> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DataProducer> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DataProducer> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent who creates or provides data."@en .
+<http://sjka.site/ontology/atlas#DataProducer> <http://www.w3.org/2000/01/rdf-schema#label> "DataProducer" .
+# 
+# http://sjka.site/ontology/atlas#DataStore
+<http://sjka.site/ontology/atlas#DataStore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataStore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://sjka.site/ontology/atlas#DataStore> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DataStore> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DataStore> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DataStore> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DataStore> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DataStore> <http://www.w3.org/2000/01/rdf-schema#comment> "Location where data is stored and possibly transformed."@en .
+<http://sjka.site/ontology/atlas#DataStore> <http://www.w3.org/2000/01/rdf-schema#label> "DataStore" .
+# 
+# http://sjka.site/ontology/atlas#DataValue
+<http://sjka.site/ontology/atlas#DataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DataValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://sjka.site/ontology/atlas#DataValue> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DataValue> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DataValue> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DataValue> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DataValue> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A data item or record, potentially derived."@en .
+<http://sjka.site/ontology/atlas#DataValue> <http://www.w3.org/2000/01/rdf-schema#label> "DataValue" .
+# 
+# http://sjka.site/ontology/atlas#DerivedInsight
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://www.w3.org/2000/01/rdf-schema#comment> "Conclusion or insight derived from data."@en .
+<http://sjka.site/ontology/atlas#DerivedInsight> <http://www.w3.org/2000/01/rdf-schema#label> "DerivedInsight" .
+# 
+# http://sjka.site/ontology/atlas#Environment
+<http://sjka.site/ontology/atlas#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Environment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sjka.site/ontology/seips#Environment> .
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Environment> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#Environment> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#Environment> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#Environment> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#Environment> <http://sjka.site/ontology/atlas#hasCardinality> "optional"@en .
+<http://sjka.site/ontology/atlas#Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "Contextual environment from SEIPS model."@en .
+<http://sjka.site/ontology/atlas#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment" .
+# 
+# http://sjka.site/ontology/atlas#ExternalEntity
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "External agent involved in data operations."@en .
+<http://sjka.site/ontology/atlas#ExternalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "ExternalEntity" .
+# 
+# http://sjka.site/ontology/atlas#InternalEntity
+<http://sjka.site/ontology/atlas#InternalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal agent involved in data operations."@en .
+<http://sjka.site/ontology/atlas#InternalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "InternalEntity" .
+# 
+# http://sjka.site/ontology/atlas#Interpretation
+<http://sjka.site/ontology/atlas#Interpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Interpretation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://sjka.site/ontology/atlas#Interpretation> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#Interpretation> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#Interpretation> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#Interpretation> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#Interpretation> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#Interpretation> <http://www.w3.org/2000/01/rdf-schema#comment> "Interpretation or analysis activity on data."@en .
+<http://sjka.site/ontology/atlas#Interpretation> <http://www.w3.org/2000/01/rdf-schema#label> "Interpretation" .
+# 
+# http://sjka.site/ontology/atlas#Organisation
+<http://sjka.site/ontology/atlas#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/atlas#Organisation> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#Organisation> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#Organisation> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#Organisation> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#Organisation> <http://sjka.site/ontology/atlas#hasCardinality> "optional"@en .
+<http://sjka.site/ontology/atlas#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Organisation responsible for data handling."@en .
+<http://sjka.site/ontology/atlas#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation" .
+# 
+# http://sjka.site/ontology/atlas#Process
+<http://sjka.site/ontology/atlas#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://sjka.site/ontology/atlas#Process> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#Process> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#Process> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#Process> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#Process> <http://sjka.site/ontology/atlas#hasCardinality> "mandatory"@en .
+<http://sjka.site/ontology/atlas#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "Process in which data operations are performed."@en .
+<http://sjka.site/ontology/atlas#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
+# 
+# http://sjka.site/ontology/atlas#SystemBoundary
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://purl.org/dc/elements/1.1/date> "2025-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines boundary between system and user activities."@en .
+<http://sjka.site/ontology/atlas#SystemBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "SystemBoundary" .
+# 
+# http://sjka.site/ontology/seips#Environment
+# 
+# http://www.w3.org/ns/prov#Activity
+# 
+# http://www.w3.org/ns/prov#Agent
+# 
+# http://www.w3.org/ns/prov#Entity
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
