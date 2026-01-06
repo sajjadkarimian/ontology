@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sjka.site/ontology/seips#"
+     xml:base="http://sjka.site/ontology/seips"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://sjka.site/ontology/seips#">
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <dc:contributor xml:lang="en">Junli Liang</dc:contributor>
+        <dc:contributor xml:lang="en">Rob Brennan</dc:contributor>
+        <dc:creator xml:lang="en">Sajjad Karimian</dc:creator>
+        <terms:bibliographicCitation xml:lang="en">Carayon P, Wooldridge A, Hoonakker P, Hundt AS, Kelly MM, Seidl KL, et al. SEIPS 3.0: Human-centered design of the patient journey for patient safety. Applied Ergonomics. 2020;84:103033.</terms:bibliographicCitation>
+        <terms:bibliographicCitation xml:lang="en">Karimian, S., Corrigan, S., Ward, M.E., Brennan, R. (2025). Enhancing Healthcare Data Transparency through a FAIR Ontology for the Systems Engineering Initiative for Patient Safety (SEIPS). Proceedings of the 33rd International Conference on Artificial Intelligence and Cognitive Science (AICS 2025).</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-01-06</terms:created>
+        <terms:description xml:lang="en">Ontology for modelling the SEIPS work system constructs (Person, Task, Technology and Tools, Environment, Organisation) to support Atlas-based data transparency and provenance modelling. This ontology captures the SEIPS work system layer used in the thesis and is aligned with PROV-O and the Atlas ontology.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:rights xml:lang="en">Copyright © 2026 Sajjad Karimian. Licensed under CC BY 4.0.</terms:rights>
+        <terms:title xml:lang="en">SEIPS Work System Ontology</terms:title>
+        <rdfs:label xml:lang="en">SEIPS Work System Ontology</rdfs:label>
+        <owl:versionInfo>1.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://sjka.site/ontology/seips#memberOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#memberOf">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Person"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#Organisation"/>
+        <rdfs:comment xml:lang="en">Relates a Person to the Organisation they belong to.</rdfs:comment>
+        <rdfs:label xml:lang="en">memberOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#organisationSituatedInEnv -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#organisationSituatedInEnv">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Organisation"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#Environment"/>
+        <rdfs:comment xml:lang="en">Relates an Organisation to the Environment in which it is situated.</rdfs:comment>
+        <rdfs:label xml:lang="en">organisationSituatedInEnv</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#performsTask -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#performsTask">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Person"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#Task"/>
+        <rdfs:comment xml:lang="en">Indicates that a Person performs a Task.</rdfs:comment>
+        <rdfs:label xml:lang="en">performsTask</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#providesTechnologyAndTools -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#providesTechnologyAndTools">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Organisation"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#TechnologyAndTools"/>
+        <rdfs:comment xml:lang="en">Indicates that an Organisation provides Technology and Tools used within the work system.</rdfs:comment>
+        <rdfs:label xml:lang="en">providesTechnologyAndTools</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#responsibleForTask -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#responsibleForTask">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Organisation"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#Task"/>
+        <rdfs:comment xml:lang="en">Indicates that an Organisation is responsible for a Task (governance/accountability view).</rdfs:comment>
+        <rdfs:label xml:lang="en">responsibleForTask</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#situatedInEnv -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#situatedInEnv">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Task"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#Environment"/>
+        <rdfs:comment xml:lang="en">Relates a Task to the Environment in which it is performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">situatedInEnv</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#usesTechnologyAndTools -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#usesTechnologyAndTools">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Task"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#TechnologyAndTools"/>
+        <rdfs:comment xml:lang="en">Relates a Task to the Technology and Tools used to carry it out.</rdfs:comment>
+        <rdfs:label xml:lang="en">usesTechnologyAndTools</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#worksInEnvironment -->
+
+
+    <owl:ObjectProperty rdf:about="http://sjka.site/ontology/seips#worksInEnvironment">
+        <rdfs:domain rdf:resource="http://sjka.site/ontology/seips#Person"/>
+        <rdfs:range rdf:resource="http://sjka.site/ontology/seips#Environment"/>
+        <rdfs:comment xml:lang="en">Indicates the Environment where a Person works.</rdfs:comment>
+        <rdfs:label xml:lang="en">worksInEnvironment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://sjka.site/ontology/seips#Environment -->
+
+
+    <owl:Class rdf:about="http://sjka.site/ontology/seips#Environment">
+        <rdfs:comment xml:lang="en">The physical and contextual surroundings in which tasks are performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#Organisation -->
+
+
+    <owl:Class rdf:about="http://sjka.site/ontology/seips#Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">An organisational unit responsible for tasks and provision of resources in the work system (modelled as a PROV Agent).</rdfs:comment>
+        <rdfs:label xml:lang="en">Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#Person -->
+
+
+    <owl:Class rdf:about="http://sjka.site/ontology/seips#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">A human actor in the SEIPS work system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#Task -->
+
+
+    <owl:Class rdf:about="http://sjka.site/ontology/seips#Task">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment xml:lang="en">A unit of work performed within the SEIPS work system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://sjka.site/ontology/seips#TechnologyAndTools -->
+
+
+    <owl:Class rdf:about="http://sjka.site/ontology/seips#TechnologyAndTools">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">Technological systems or tools used to perform tasks in the SEIPS work system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Technology and Tools</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

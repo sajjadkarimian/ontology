@@ -1,0 +1,163 @@
+<http://sjka.site/ontology/seips#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://sjka.site/ontology/seips#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o#> .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/elements/1.1/contributor> "Junli Liang"@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/elements/1.1/contributor> "Rob Brennan"@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/elements/1.1/creator> "Sajjad Karimian"@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/bibliographicCitation> "Carayon P, Wooldridge A, Hoonakker P, Hundt AS, Kelly MM, Seidl KL, et al. SEIPS 3.0: Human-centered design of the patient journey for patient safety. Applied Ergonomics. 2020;84:103033."@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/bibliographicCitation> "Karimian, S., Corrigan, S., Ward, M.E., Brennan, R. (2025). Enhancing Healthcare Data Transparency through a FAIR Ontology for the Systems Engineering Initiative for Patient Safety (SEIPS). Proceedings of the 33rd International Conference on Artificial Intelligence and Cognitive Science (AICS 2025)."@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/created> "2026-01-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/description> "Ontology for modelling the SEIPS work system constructs (Person, Task, Technology and Tools, Environment, Organisation) to support Atlas-based data transparency and provenance modelling. This ontology captures the SEIPS work system layer used in the thesis and is aligned with PROV-O and the Atlas ontology."@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/rights> "Copyright © 2026 Sajjad Karimian. Licensed under CC BY 4.0."@en .
+<http://sjka.site/ontology/seips#> <http://purl.org/dc/terms/title> "SEIPS Work System Ontology"@en .
+<http://sjka.site/ontology/seips#> <http://www.w3.org/2000/01/rdf-schema#label> "SEIPS Work System Ontology"@en .
+<http://sjka.site/ontology/seips#> <http://www.w3.org/2002/07/owl#versionInfo> "1.2" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#memberOf
+<http://sjka.site/ontology/seips#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Person> .
+<http://sjka.site/ontology/seips#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Organisation> .
+<http://sjka.site/ontology/seips#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Person to the Organisation they belong to."@en .
+<http://sjka.site/ontology/seips#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "memberOf"@en .
+# 
+# http://sjka.site/ontology/seips#organisationSituatedInEnv
+<http://sjka.site/ontology/seips#organisationSituatedInEnv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#organisationSituatedInEnv> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Organisation> .
+<http://sjka.site/ontology/seips#organisationSituatedInEnv> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Environment> .
+<http://sjka.site/ontology/seips#organisationSituatedInEnv> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an Organisation to the Environment in which it is situated."@en .
+<http://sjka.site/ontology/seips#organisationSituatedInEnv> <http://www.w3.org/2000/01/rdf-schema#label> "organisationSituatedInEnv"@en .
+# 
+# http://sjka.site/ontology/seips#performsTask
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Person> .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a Person performs a Task."@en .
+<http://sjka.site/ontology/seips#performsTask> <http://www.w3.org/2000/01/rdf-schema#label> "performsTask"@en .
+# 
+# http://sjka.site/ontology/seips#providesTechnologyAndTools
+<http://sjka.site/ontology/seips#providesTechnologyAndTools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#providesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Organisation> .
+<http://sjka.site/ontology/seips#providesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#TechnologyAndTools> .
+<http://sjka.site/ontology/seips#providesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an Organisation provides Technology and Tools used within the work system."@en .
+<http://sjka.site/ontology/seips#providesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#label> "providesTechnologyAndTools"@en .
+# 
+# http://sjka.site/ontology/seips#responsibleForTask
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Organisation> .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an Organisation is responsible for a Task (governance/accountability view)."@en .
+<http://sjka.site/ontology/seips#responsibleForTask> <http://www.w3.org/2000/01/rdf-schema#label> "responsibleForTask"@en .
+# 
+# http://sjka.site/ontology/seips#situatedInEnv
+<http://sjka.site/ontology/seips#situatedInEnv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#situatedInEnv> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#situatedInEnv> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Environment> .
+<http://sjka.site/ontology/seips#situatedInEnv> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Task to the Environment in which it is performed."@en .
+<http://sjka.site/ontology/seips#situatedInEnv> <http://www.w3.org/2000/01/rdf-schema#label> "situatedInEnv"@en .
+# 
+# http://sjka.site/ontology/seips#usesTechnologyAndTools
+<http://sjka.site/ontology/seips#usesTechnologyAndTools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#usesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Task> .
+<http://sjka.site/ontology/seips#usesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#TechnologyAndTools> .
+<http://sjka.site/ontology/seips#usesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Task to the Technology and Tools used to carry it out."@en .
+<http://sjka.site/ontology/seips#usesTechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#label> "usesTechnologyAndTools"@en .
+# 
+# http://sjka.site/ontology/seips#worksInEnvironment
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sjka.site/ontology/seips#Person> .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#range> <http://sjka.site/ontology/seips#Environment> .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Environment where a Person works."@en .
+<http://sjka.site/ontology/seips#worksInEnvironment> <http://www.w3.org/2000/01/rdf-schema#label> "worksInEnvironment"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://sjka.site/ontology/seips#Environment
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical and contextual surroundings in which tasks are performed."@en .
+<http://sjka.site/ontology/seips#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment"@en .
+# 
+# http://sjka.site/ontology/seips#Organisation
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "An organisational unit responsible for tasks and provision of resources in the work system (modelled as a PROV Agent)."@en .
+<http://sjka.site/ontology/seips#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@en .
+# 
+# http://sjka.site/ontology/seips#Person
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human actor in the SEIPS work system."@en .
+<http://sjka.site/ontology/seips#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://sjka.site/ontology/seips#Task
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of work performed within the SEIPS work system."@en .
+<http://sjka.site/ontology/seips#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task"@en .
+# 
+# http://sjka.site/ontology/seips#TechnologyAndTools
+<http://sjka.site/ontology/seips#TechnologyAndTools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sjka.site/ontology/seips#TechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://sjka.site/ontology/seips#TechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#comment> "Technological systems or tools used to perform tasks in the SEIPS work system."@en .
+<http://sjka.site/ontology/seips#TechnologyAndTools> <http://www.w3.org/2000/01/rdf-schema#label> "Technology and Tools"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
