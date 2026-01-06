@@ -1,0 +1,333 @@
+<h2 id="crossreference" class="list">Cross-reference for Atlas Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Atlas Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Actor" title="http://sjka.site/ontology/atlas#Actor">Actor</a></li>
+  <li><a href="#ContextualUse" title="http://sjka.site/ontology/atlas#ContextualUse">ContextualUse</a></li>
+  <li><a href="#DataConsumer" title="http://sjka.site/ontology/atlas#DataConsumer">DataConsumer</a></li>
+  <li><a href="#DataFlow" title="http://sjka.site/ontology/atlas#DataFlow">DataFlow</a></li>
+  <li><a href="#DataProcessing" title="http://sjka.site/ontology/atlas#DataProcessing">DataProcessing</a></li>
+  <li><a href="#DataProcessingStep" title="http://sjka.site/ontology/atlas#DataProcessingStep">DataProcessingStep</a></li>
+  <li><a href="#DataProducer" title="http://sjka.site/ontology/atlas#DataProducer">DataProducer</a></li>
+  <li><a href="#DataStore" title="http://sjka.site/ontology/atlas#DataStore">DataStore</a></li>
+  <li><a href="#DataValue" title="http://sjka.site/ontology/atlas#DataValue">DataValue</a></li>
+  <li><a href="#DerivedInsight" title="http://sjka.site/ontology/atlas#DerivedInsight">DerivedInsight</a></li>
+  <li><a href="#Environment" title="http://sjka.site/ontology/atlas#Environment">Environment</a></li>
+  <li><a href="#ExternalEntity" title="http://sjka.site/ontology/atlas#ExternalEntity">ExternalEntity</a></li>
+  <li><a href="#InternalEntity" title="http://sjka.site/ontology/atlas#InternalEntity">InternalEntity</a></li>
+  <li><a href="#Interpretation" title="http://sjka.site/ontology/atlas#Interpretation">Interpretation</a></li>
+  <li><a href="#Organisation" title="http://sjka.site/ontology/atlas#Organisation">Organisation</a></li>
+  <li><a href="#Process" title="http://sjka.site/ontology/atlas#Process">Process</a></li>
+  <li><a href="#SystemBoundary" title="http://sjka.site/ontology/atlas#SystemBoundary">SystemBoundary</a></li>
+ </ul>
+ <div class="entity" id="Actor">
+  <h3>Actor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#Actor</p>
+  <div class="comment">
+   <span class="markdown">Accountable actor performing or responsible for an activity (e.g., a microbiologist, IPC team member) in the provenance view.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#playsRole" title="http://sjka.site/ontology/atlas#playsRole">playsRole</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContextualUse">
+  <h3>ContextualUse<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#ContextualUse</p>
+  <div class="comment">
+   <span class="markdown">Use of data in a specific context, role, and time (e.g., operational KPI computation and use).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataConsumer">
+  <h3>DataConsumer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataConsumer</p>
+  <div class="comment">
+   <span class="markdown">Role agent that consumes/uses data. Typically linked from an Actor via atlas:playsRole, and then linked to an Organisation via prov:actedOnBehalfOf.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataFlow">
+  <h3>DataFlow<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataFlow</p>
+  <div class="comment">
+   <span class="markdown">Data exchanged between components or activities (conceptual flow or exchanged dataset/transfer record).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataProcessing">
+  <h3>DataProcessing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataProcessing</p>
+  <div class="comment">
+   <span class="markdown">Activity in which data are processed/transformed (e.g., extraction, cleaning, exporting, merging).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#DataProcessingStep" title="http://sjka.site/ontology/atlas#DataProcessingStep">DataProcessingStep</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataProcessingStep">
+  <h3>DataProcessingStep<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataProcessingStep</p>
+  <div class="comment">
+   <span class="markdown">Deprecated in v1.2. Use atlas:DataProcessing (aligned with thesis schema, figure, and case study RDF).</span>
+  </div>
+  <dl>
+   <dt>
+    Is deprecated
+   </dt>
+   <dd>
+    true
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataProducer">
+  <h3>DataProducer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataProducer</p>
+  <div class="comment">
+   <span class="markdown">Role agent that produces data. Typically linked from an Actor via atlas:playsRole, and then linked to an Organisation via prov:actedOnBehalfOf.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataStore">
+  <h3>DataStore<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataStore</p>
+  <div class="comment">
+   <span class="markdown">Location where data are stored (e.g., database, shared drive). Modelled as a PROV Entity to support prov:atLocation assertions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DataValue">
+  <h3>DataValue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DataValue</p>
+  <div class="comment">
+   <span class="markdown">A data item/record/dataset used or produced in the workflow.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DerivedInsight">
+  <h3>DerivedInsight<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#DerivedInsight</p>
+  <div class="comment">
+   <span class="markdown">An insight/metric/report derived from data values (e.g., a CPE report, KPIs).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Environment">
+  <h3>Environment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#Environment</p>
+  <div class="comment">
+   <span class="markdown">Contextual environment aligned to the SEIPS work system model.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://sjka.site/ontology/seips#Environment" target="_blank" title="http://sjka.site/ontology/seips#Environment">Environment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ExternalEntity">
+  <h3>ExternalEntity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#ExternalEntity</p>
+  <div class="comment">
+   <span class="markdown">External agent involved in data operations (outside the focal organisational boundary).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InternalEntity">
+  <h3>InternalEntity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#InternalEntity</p>
+  <div class="comment">
+   <span class="markdown">Internal agent involved in data operations (inside the focal organisational boundary).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Interpretation">
+  <h3>Interpretation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#Interpretation</p>
+  <div class="comment">
+   <span class="markdown">Interpretation/analysis activity over data (e.g., interpreting an extract to produce a report).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Organisation">
+  <h3>Organisation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#Organisation</p>
+  <div class="comment">
+   <span class="markdown">Organisation responsible for data handling in the provenance view (modelled as a PROV Agent).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Process">
+  <h3>Process<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#Process</p>
+  <div class="comment">
+   <span class="markdown">A process step in which data operations are performed (high-level activity type used in Atlas).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Activity" target="_blank" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SystemBoundary">
+  <h3>SystemBoundary<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#SystemBoundary</p>
+  <div class="comment">
+   <span class="markdown">Represents the system boundary construct used to distinguish internal vs external agents/activities for governance and accountability. Modelled as an agent-like governance construct in the Atlas diagram.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#playsRole" title="http://sjka.site/ontology/atlas#playsRole">playsRole</a></li>
+ </ul>
+ <div class="entity" id="playsRole">
+  <h3>playsRole<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://sjka.site/ontology/atlas#playsRole</p>
+  <div class="comment">
+   <span class="markdown">Links an Actor to a role agent (e.g., DataProducer or DataConsumer) used for accountability modelling. Organisational responsibility can then be asserted using prov:actedOnBehalfOf from the role-agent to an Organisation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Actor" title="http://sjka.site/ontology/atlas#Actor">Actor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
