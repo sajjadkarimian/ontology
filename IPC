@@ -1,0 +1,135 @@
+@base <http://sjka.site/casestudy/ipc/> .
+@prefix ex:    <http://sjka.site/casestudy/ipc/> .
+@prefix atlas: <http://sjka.site/ontology/atlas#> .
+@prefix seips: <http://sjka.site/ontology/seips#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+
+###########
+# SEIPS environment + SEIPS organisation (Data Handler)
+###########
+
+ex:AcuteHospitalEnv a atlas:Environment ;
+  dct:title "Acute hospital environment (IPC case study)" .
+
+ex:DataHandlerOrg a seips:Organisation ;
+  dct:title "Hospital organisation (Data Handler)" ;
+  seips:organisationSituatedInEnv ex:AcuteHospitalEnv .
+
+# Diagram relation: Environment -> Organisation
+ex:AcuteHospitalEnv seips:memberOf ex:DataHandlerOrg .
+
+###########
+# Atlas organisations (PROV Agents in Atlas)
+###########
+
+ex:IPC_Department a atlas:Organisation ;
+  dct:title "Infection Prevention and Control (IPC)" .
+
+ex:Microbiology_Department a atlas:Organisation ;
+  dct:title "Microbiology Laboratory" .
+
+###########
+# Data stores (also as prov:Location for prov:atLocation)
+###########
+
+ex:Telepath_Database a atlas:DataStore, prov:Location ;
+  dct:title "Telepath database" .
+
+ex:SharedDrive a atlas:DataStore, prov:Location ;
+  dct:title "Shared drive / file share" .
+
+###########
+# Atlas roles + accountability
+###########
+
+ex:Role_DataProducer a atlas:DataProducer ;
+  dct:title "Data Producer role" ;
+  prov:actedOnBehalfOf ex:Microbiology_Department .
+
+ex:Role_DataConsumer a atlas:DataConsumer ;
+  dct:title "Data Consumer role" ;
+  prov:actedOnBehalfOf ex:IPC_Department .
+
+ex:Microbiologist_Actor a atlas:Actor ;
+  dct:title "Microbiologist (as Actor)" ;
+  atlas:playsRole ex:Role_DataProducer .
+
+ex:IPCTeam_Actor a atlas:Actor ;
+  dct:title "IPC team member (as Actor)" ;
+  atlas:playsRole ex:Role_DataConsumer .
+
+###########
+# Data artefacts (Entities) + lineage + location
+###########
+
+ex:PatientAdmissionData a atlas:DataValue ;
+  dct:title "Patient admission / movement data" .
+
+ex:CPE_ScreenResults a atlas:DataValue ;
+  dct:title "Results of CPE screens" ;
+  prov:atLocation ex:Telepath_Database .
+
+ex:CPE_ExcelExtract a atlas:DataValue ;
+  dct:title "CPE Excel extract" ;
+  prov:atLocation ex:SharedDrive .
+
+ex:CPE_Report a atlas:DerivedInsight ;
+  dct:title "CPE report" ;
+  prov:atLocation ex:SharedDrive .
+
+ex:CPE_KPIs a atlas:DerivedInsight ;
+  dct:title "CPE KPIs" .
+
+###########
+# Activities (Atlas activities + PROV relations)
+###########
+
+ex:DoLabTests a atlas:Process, atlas:DataProcessing ;
+  dct:title "Do lab tests (CPE screens)" ;
+  prov:used ex:PatientAdmissionData ;
+  prov:wasAssociatedWith ex:Microbiologist_Actor .
+
+ex:CPE_ScreenResults prov:wasGeneratedBy ex:DoLabTests .
+
+ex:ExportToExcel a atlas:Process, atlas:DataProcessing ;
+  dct:title "Export CPE data to Excel" ;
+  prov:used ex:CPE_ScreenResults ;
+  prov:wasAssociatedWith ex:Microbiologist_Actor .
+
+ex:CPE_ExcelExtract
+  prov:wasGeneratedBy ex:ExportToExcel ;
+  prov:wasDerivedFrom ex:CPE_ScreenResults .
+
+ex:CreateCPEReport a atlas:Process, atlas:Interpretation ;
+  dct:title "Create CPE report" ;
+  prov:used ex:CPE_ExcelExtract ;
+  prov:wasAssociatedWith ex:IPCTeam_Actor .
+
+ex:CPE_Report
+  prov:wasGeneratedBy ex:CreateCPEReport ;
+  prov:wasDerivedFrom ex:CPE_ExcelExtract .
+
+ex:CreateCPEKPIs a atlas:Process, atlas:ContextualUse ;
+  dct:title "Create CPE KPIs" ;
+  prov:used ex:PatientAdmissionData ;
+  prov:wasAssociatedWith ex:IPCTeam_Actor .
+
+ex:CPE_KPIs
+  prov:wasGeneratedBy ex:CreateCPEKPIs ;
+  prov:wasDerivedFrom ex:PatientAdmissionData .
+
+###########
+# Minimal SEIPS instantiation (Task/Tech/Person)
+###########
+
+ex:Microbiologist_Person a seips:Person ;
+  dct:title "Microbiologist (SEIPS person)" ;
+  seips:performsTask ex:CPE_ScreeningTask .
+
+ex:CPE_ScreeningTask a seips:Task ;
+  dct:title "CPE screening task" ;
+  seips:usesTechnologyAndTools ex:Telepath_System .
+
+ex:Telepath_System a seips:TechnologyAndTools ;
+  dct:title "Telepath Laboratory Information System" .
