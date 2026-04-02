@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "IPC Data Transparency Knowledge Graph",
+  "description": "Knowledge graph representing IPC data flows using Atlas and SEIPS ontologies",
+  "url": "https://www.sjka.site/IPC.rdf",
+  "creator": {
+    "@type": "Person",
+    "name": "Sajjad Karimian"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "University College Dublin"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+</script>
