@@ -14,11 +14,7 @@
 ###########
 # Dataset-level metadata
 ###########
-
 @prefix schema: <https://schema.org/> .
-
-@prefix schema: <https://schema.org/> .
-
 ###########
 # Dataset Metadata
 ###########
