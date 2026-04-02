@@ -15,34 +15,58 @@
 # Dataset-level metadata
 ###########
 
+@prefix schema: <https://schema.org/> .
+
+###########
+# FAIR-enhanced Dataset Metadata
+###########
+
 ex:IPC_KnowledgeGraph
     a dcat:Dataset, void:Dataset ;
+
     dct:title "IPC Data Transparency Knowledge Graph"@en ;
-    dct:description "A machine-readable knowledge graph representing data flows, provenance, roles, and responsibilities in an Infection Prevention and Control (IPC) reporting workflow, implemented using the Atlas and SEIPS ontologies aligned with W3C PROV."@en ;
-    dct:identifier "https://www.sjka.site/IPC.rdf" ;
+    dct:description "A FAIR-aligned knowledge graph representing data flows, provenance, and responsibilities in an Infection Prevention and Control (IPC) workflow using Atlas and SEIPS ontologies."@en ;
+
+    dct:identifier <https://doi.org/10.5281/zenodo.19386780> ;
     dct:creator ex:SajjadKarimian ;
     dct:publisher ex:UCD ;
+
     dct:issued "2026-04-02"^^xsd:date ;
     dct:modified "2026-04-02"^^xsd:date ;
+    dct:hasVersion "1.0" ;
+
     dct:language "en" ;
     dct:format "text/turtle" ;
+
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:subject "Infection Prevention and Control"@en,
-                "Data Transparency"@en,
+
+    dct:subject "FAIR Data"@en,
+                "Healthcare Data"@en,
                 "Knowledge Graph"@en,
-                "Healthcare Data Provenance"@en ;
+                "Data Transparency"@en,
+                "Provenance"@en,
+                "Infection Prevention and Control"@en ;
+
+    dcat:keyword "FAIR", "Knowledge Graph", "Healthcare", "PROV-O", "SEIPS", "Atlas", "IPC" ;
+
     dct:conformsTo <http://www.w3.org/ns/prov-o>,
                    <https://www.w3.org/TR/turtle/>,
                    <http://www.w3.org/ns/dcat#> ;
-    dcat:keyword "IPC", "CPE", "Data transparency", "Knowledge graph", "FAIR", "PROV-O", "SEIPS", "Atlas" ;
-    dcat:theme <http://eurovoc.europa.eu/100277> ;
+
+    rdfs:seeAlso <https://www.w3.org/TR/prov-o/> ;
+
+    foaf:page <https://www.sjka.site/ontology/ipc-dataset.html> ;
+
     dcat:distribution ex:IPC_KG_Turtle_Distribution ;
-    foaf:page <https://www.sjka.site/IPC.rdf> .
+
+    schema:contactPoint [
+        a schema:ContactPoint ;
+        schema:email "mailto:sajjad.karimian94@gmail.com"
+    ] .
 
 ex:IPC_KG_Turtle_Distribution
     a dcat:Distribution ;
-    dct:title "Turtle serialization of the IPC Data Transparency Knowledge Graph"@en ;
-    dct:description "Downloadable Turtle RDF file for the IPC knowledge graph."@en ;
+    dct:title "Turtle RDF serialization of IPC Knowledge Graph"@en ;
     dct:format "text/turtle" ;
     dcat:mediaType "text/turtle" ;
     dcat:downloadURL <https://www.sjka.site/IPC.rdf> ;
