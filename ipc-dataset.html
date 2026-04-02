@@ -1,49 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>IPC Dataset</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPC Data Transparency Knowledge Graph</title>
+  <meta name="description" content="Landing page for the IPC Data Transparency Knowledge Graph used in the Atlas study." />
 
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Dataset",
-  "name": "IPC Data Transparency Knowledge Graph",
-  "description": "Knowledge graph representing IPC data flows using Atlas and SEIPS ontologies",
-  "url": "https://www.sjka.site/ontology/IPC.rdf",
-  "identifier": "https://doi.org/10.5281/zenodo.19386780",
-  "creator": {
-    "@type": "Person",
-    "name": "Sajjad Karimian"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "University College Dublin"
-  },
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "keywords": [
-    "FAIR",
-    "Knowledge Graph",
-    "Healthcare",
-    "PROV-O",
-    "SEIPS",
-    "Atlas",
-    "IPC"
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "IPC Data Transparency Knowledge Graph",
+    "description": "A FAIR-aligned knowledge graph representing data flows, provenance, and responsibilities in an Infection Prevention and Control (IPC) workflow using Atlas and SEIPS ontologies.",
+    "url": "https://www.sjka.site/ontology/ipc-dataset.html",
+    "identifier": "https://doi.org/10.5281/zenodo.19386780",
+    "sameAs": "https://doi.org/10.5281/zenodo.19386780",
+    "creator": {
+      "@type": "Person",
+      "name": "Sajjad Karimian"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "University College Dublin"
+    },
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "keywords": [
+      "FAIR",
+      "Knowledge Graph",
+      "Healthcare",
+      "PROV-O",
+      "SEIPS",
+      "Atlas",
+      "IPC",
+      "Data Transparency",
+      "Infection Prevention and Control"
+    ],
+    "distribution": {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.sjka.site/ontology/IPC.rdf",
+      "encodingFormat": "text/turtle"
+    },
+    "includedInDataCatalog": {
+      "@type": "DataCatalog",
+      "name": "SJKA Ontology Resources"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "mailto:sajjad.karimian94@gmail.com"
+    }
+  }
+  </script>
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #222;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .meta {
+      background: #f8f9fb;
+      border: 1px solid #e2e6ea;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px 0;
+    }
+    a {
+      color: #0b63ce;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
-
 <body>
   <h1>IPC Data Transparency Knowledge Graph</h1>
-  <p>This page describes the dataset used in the Atlas study.</p>
 
   <p>
-    Download RDF:
-    <a href="https://www.sjka.site/ontology/IPC.rdf">
-      IPC.rdf
-    </a>
+    This landing page describes the dataset used in the Atlas study for modelling
+    data transparency in Infection Prevention and Control (IPC) workflows.
+  </p>
+
+  <div class="meta">
+    <p><strong>Title:</strong> IPC Data Transparency Knowledge Graph</p>
+    <p><strong>Description:</strong> A FAIR-aligned knowledge graph representing data flows, provenance, and responsibilities in an Infection Prevention and Control (IPC) workflow using Atlas and SEIPS ontologies.</p>
+    <p><strong>Creator:</strong> Sajjad Karimian</p>
+    <p><strong>Publisher:</strong> University College Dublin</p>
+    <p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.19386780">https://doi.org/10.5281/zenodo.19386780</a></p>
+    <p><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+    <p><strong>Format:</strong> Turtle RDF (<code>text/turtle</code>)</p>
+    <p><strong>Contact:</strong> <a href="mailto:sajjad.karimian94@gmail.com">sajjad.karimian94@gmail.com</a></p>
+  </div>
+
+  <h2>Access</h2>
+  <ul>
+    <li>
+      RDF file:
+      <a href="https://www.sjka.site/ontology/IPC.rdf">https://www.sjka.site/ontology/IPC.rdf</a>
+    </li>
+    <li>
+      DOI record:
+      <a href="https://doi.org/10.5281/zenodo.19386780">https://doi.org/10.5281/zenodo.19386780</a>
+    </li>
+  </ul>
+
+  <h2>Keywords</h2>
+  <p>FAIR, Knowledge Graph, Healthcare, PROV-O, SEIPS, Atlas, IPC, Data Transparency</p>
+
+  <h2>Standards and vocabularies</h2>
+  <ul>
+    <li><a href="https://www.w3.org/TR/prov-o/">W3C PROV-O</a></li>
+    <li><a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT</a></li>
+    <li><a href="https://schema.org/Dataset">Schema.org Dataset</a></li>
+    <li><a href="https://www.w3.org/TR/turtle/">Turtle RDF</a></li>
+  </ul>
+
+  <h2>About</h2>
+  <p>
+    This dataset supports the Atlas methodology for augmenting socio-technical
+    systems analysis with machine-readable representations of data provenance,
+    responsibility, and flow structure.
   </p>
 </body>
 </html>
