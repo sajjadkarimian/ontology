@@ -1,9 +1,62 @@
-@base <http://sjka.site/casestudy/ipc/> .
-@prefix ex:    <http://sjka.site/casestudy/ipc/> .
+@base <http://sjka.site/ontology/ipc/> .
+@prefix ex:    <http://sjka.site/ontology/ipc/> .
 @prefix atlas: <http://sjka.site/ontology/atlas#> .
 @prefix seips: <http://sjka.site/ontology/seips#> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
 @prefix dct:   <http://purl.org/dc/terms/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+###########
+# Dataset-level metadata
+###########
+
+ex:IPC_KnowledgeGraph
+    a dcat:Dataset, void:Dataset ;
+    dct:title "IPC Data Transparency Knowledge Graph"@en ;
+    dct:description "A machine-readable knowledge graph representing data flows, provenance, roles, and responsibilities in an Infection Prevention and Control (IPC) reporting workflow, implemented using the Atlas and SEIPS ontologies aligned with W3C PROV."@en ;
+    dct:identifier "https://www.sjka.site/IPC.rdf" ;
+    dct:creator ex:SajjadKarimian ;
+    dct:publisher ex:UCD ;
+    dct:issued "2026-04-02"^^xsd:date ;
+    dct:modified "2026-04-02"^^xsd:date ;
+    dct:language "en" ;
+    dct:format "text/turtle" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:subject "Infection Prevention and Control"@en,
+                "Data Transparency"@en,
+                "Knowledge Graph"@en,
+                "Healthcare Data Provenance"@en ;
+    dct:conformsTo <http://www.w3.org/ns/prov-o>,
+                   <https://www.w3.org/TR/turtle/>,
+                   <http://www.w3.org/ns/dcat#> ;
+    dcat:keyword "IPC", "CPE", "Data transparency", "Knowledge graph", "FAIR", "PROV-O", "SEIPS", "Atlas" ;
+    dcat:theme <http://eurovoc.europa.eu/100277> ;
+    dcat:distribution ex:IPC_KG_Turtle_Distribution ;
+    foaf:page <https://www.sjka.site/IPC.rdf> .
+
+ex:IPC_KG_Turtle_Distribution
+    a dcat:Distribution ;
+    dct:title "Turtle serialization of the IPC Data Transparency Knowledge Graph"@en ;
+    dct:description "Downloadable Turtle RDF file for the IPC knowledge graph."@en ;
+    dct:format "text/turtle" ;
+    dcat:mediaType "text/turtle" ;
+    dcat:downloadURL <https://www.sjka.site/IPC.rdf> ;
+    dcat:accessURL <https://www.sjka.site/IPC.rdf> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+ex:SajjadKarimian
+    a foaf:Person ;
+    foaf:name "Sajjad Karimian" .
+
+ex:UCD
+    a foaf:Organization ;
+    foaf:name "University College Dublin" .
+
 
 ###########
 # SEIPS environment + SEIPS organisation (Data Handler)
